@@ -4,13 +4,13 @@ public class MainApp {
 
     public static void main(String[] args) {
         ListaEncadeada listaEncadeada = new ListaEncadeada();
-        listaEncadeada.inserirNoInicio("LDB", "Londrina");
-        listaEncadeada.inserirNoFim("VCP", "Campinas");
-        listaEncadeada.inserirNoFim("BPS", "Porto Seguro");
+        listaEncadeada.inserirNoInicio(new Aeroporto("LDB", "Londrina"));
+        listaEncadeada.inserirNoFim(new Aeroporto("VCP", "Campinas"));
+        listaEncadeada.inserirNoFim(new Aeroporto("BPS", "Porto Seguro"));
         listaEncadeada.imprimirTodos();
-        listaEncadeada.inserirNoInicio("MGF", "Maringá");
+        listaEncadeada.inserirNoInicio(new Aeroporto("MGF", "Maringá"));
         listaEncadeada.imprimirTodos();
-        listaEncadeada.inserirNoFim("SSA", "Salvador");
+        listaEncadeada.inserirNoFim(new Aeroporto("SSA", "Salvador"));
         listaEncadeada.imprimirTodos();
     }
 }

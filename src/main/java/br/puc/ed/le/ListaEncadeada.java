@@ -8,12 +8,22 @@ public class ListaEncadeada {
         inicio = null;
     }
 
-    public void inserirNoInicio(String codigoAeroporto, String nomeCidade){
-
+    public void inserirNoInicio(Aeroporto aeroporto) {
+        Node novoNode = new Node(aeroporto);
+        if (inicio == null) {
+            this.fim = novoNode;
+        }
+        novoNode.setProximo(inicio);
+        this.inicio = novoNode;
     }
 
-    public void inserirNoFim(String codigoAeroporto, String nomeCidade){
-
+    public void inserirNoFim(Aeroporto aeroporto) {
+        Node novoNode = new Node(aeroporto);
+        if (inicio == null) {
+            this.inicio = novoNode;
+        }
+        fim.setProximo(novoNode);
+        fim = novoNode;
     }
 
     public Node excluirNoInicio(){
