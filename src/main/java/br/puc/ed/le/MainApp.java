@@ -10,7 +10,10 @@ public class MainApp {
         listaEncadeada.imprimirTodos();
         listaEncadeada.inserirNoInicio(new Aeroporto("MGF", "Maringá"));
         listaEncadeada.imprimirTodos();
-        listaEncadeada.inserirNoFim(new Aeroporto("SSA", "Salvador"));
+        Aeroporto salvador = new Aeroporto("SSA", "Salvador");
+        listaEncadeada.inserirNoInicio(salvador);
+        listaEncadeada.imprimirTodos();
+        listaEncadeada.inserirNoProximo(salvador, new Aeroporto("LEK", "Leonardo"));
         listaEncadeada.imprimirTodos();
     }
 }
