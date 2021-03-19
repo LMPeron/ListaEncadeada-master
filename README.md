@@ -15,7 +15,6 @@ Projeto apresentado no dia 12 de março de 2021 para os estudantes da disciplina
 Crie o método getQtdElementos na ListaEncadeada.
 5) Adicione o ponteiro fim na lista encadeada. Altere os métodos de inclusão e exclusão para atualizar corretamente o ponteiro fim. Implemente o método public Node getFim(), que retorna o último nó da lista
 6) Implemente um algoritmo que retorne o penúltimo elemento da lista.
-
 7) Implemente um método para inserir um aeroporto após outro que já está na lista.
 
 **Referência:**

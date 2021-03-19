@@ -36,15 +36,16 @@ public class ListaEncadeada {
         return null;
     }
 
-    public void inserirNoProximo(Aeroporto node, Aeroporto aeroporto) {
+    public void inserirNoProximo(String node, Aeroporto aeroporto) {
         Node n = inicio;
         Node novo = new Node(aeroporto);
-        while(!(n.getAeroporto().equals(node)) && !(n.equals(fim))) {
+        while(!(n.getAeroporto().getCodigoAeroporto().equals(node)) && !(n.equals(fim))) {
             n = n.getProximo();
         }
         novo.setProximo(n.getProximo());
         n.setProximo(novo);
     }
+
 
     public boolean isVazia(){
         return inicio == null;
